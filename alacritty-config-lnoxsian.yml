@@ -1,0 +1,135 @@
+# This is my config done by lnoxsian for alacritty
+# Terminal type
+env:
+  TERM: xterm-256color
+# Cursor config
+cursor:
+  style: block
+  unfocused_hollow: true
+# Windows config
+window:
+  padding:
+    x: 5
+    y: 5
+  opacity: 0.90
+# Scrolling config
+scrolling:
+  history: 2000
+  multiplier: 3
+tabspaces: 4
+# Font config
+font:
+  normal:
+    family: InconsolataLGC NF 
+  italic:
+    fmaily: InconsolataLGC NF Italic
+  bold:
+    fmaily: InconsolataLGC NF Bold
+  bold_italic:
+    family: InconsolataLGC NF Bold Italic
+  style: bold
+  size: 11.0
+  
+# Mouse config
+mouse:
+  hide_when_typing: true
+  mouse:
+    enabled: true
+    mods: None
+  binding:
+    key: U
+    mods: Control|Shift
+    
+# Cursor config
+cursor:
+  style: block
+  blinking: True
+# Right click to paste the selection
+mouse_bindings:
+  - { mouse: Right, action: PasteSelection }
+# These are colors for the terminal
+# Source: https://github.com/Roboron3042/Cyberpunk-Neon
+colors:
+  # Default colors
+  primary:
+    background: '#1E1E2E' # base
+    foreground: '#CDD6F4' # text
+    dim_foreground: '#CDD6F4' # text
+    bright_foreground: '#CDD6F4' # text
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '#1E1E2E' # base
+    cursor: '#F5E0DC' # rosewater
+  vi_mode_cursor:
+    text: '#1E1E2E' # base
+    cursor: '#B4BEFE' # lavender
+  # Search colors
+  search:
+    matches:
+      foreground: '#1E1E2E' # base
+      background: '#A6ADC8' # subtext0
+    focused_match:
+      foreground: '#1E1E2E' # base
+      background: '#A6E3A1' # green
+    bar:
+      foreground: '#1E1E2E' # base
+      background: '#A6ADC8' # subtext0
+  # Keyboard regex hints
+  hints:
+    start:
+      foreground: '#1E1E2E' # base
+      background: '#F9E2AF' # yellow
+    end:
+      foreground: '#1E1E2E' # base
+      background: '#A6ADC8' # subtext0
+  # Selection colors
+  selection:
+    text: '#1E1E2E' # base
+    background: '#F5E0DC' # rosewater
+
+  # Normal colors
+  normal:
+    black:   '#45475A' # surface1
+    red:     '#F38BA8' # red
+    green:   '#A6E3A1' # green
+    yellow:  '#F9E2AF' # yellow
+    blue:    '#89B4FA' # blue
+    magenta: '#F5C2E7' # pink
+    cyan:    '#94E2D5' # teal
+    white:   '#BAC2DE' # subtext1
+  # Bright colors
+  bright:
+    black:   '#585B70' # surface2
+    red:     '#F38BA8' # red
+    green:   '#A6E3A1' # green
+    yellow:  '#F9E2AF' # yellow
+    blue:    '#89B4FA' # blue
+    magenta: '#F5C2E7' # pink
+    cyan:    '#94E2D5' # teal
+    white:   '#A6ADC8' # subtext0
+  # Dim colors 
+  dim:
+    black:   '#45475A' # surface1
+    red:     '#F38BA8' # red
+    green:   '#A6E3A1' # green
+    yellow:  '#F9E2AF' # yellow
+    blue:    '#89B4FA' # blue
+    magenta: '#F5C2E7' # pink
+    cyan:    '#94E2D5' # teal
+    white:   '#BAC2DE' # subtext1
+  indexed_colors:
+    - { index: 16, color: '#FAB387' }
+    - { index: 17, color: '#F5E0DC' }
+
+  transparent_background_colors: true
+  draw_bold_text_with_bright_colors: true
+# These are some of the keybindings for alacritty
+key_bindings:
+  - { key: V,        mods: Alt|Shift,       action: ToggleViMode}
+  - { key: V,        mods: Control|Shift,    action: Paste     }
+  - { key: K,        mods: Alt,    action: IncreaseFontSize    }
+  - { key: J,        mods: Alt,    action: DecreaseFontSize    }
+  - { key: Q,        mods: Alt,        action: Quit            }
+  - { key: F,        mods: Alt,    action: ToggleFullscreen    }
+  - { key: N,        mods: Alt,    action: CreateNewWindow     }
+  - { key: C,        mods: Alt|Shift,   action: ClearHistory   }
