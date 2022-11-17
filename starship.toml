@@ -1,9 +1,0 @@
-add_newline= false
-format="""
-$all$character"""
-[character]
-success_symbol="[∮](bold violet)"
-error_symbol="[∯](bold red)"
-[directory]
-style='bold blue'
-truncation_length = 4
