@@ -30,5 +30,5 @@ _This repo contains all the dotfiles as said above_
 ### Warning !
 ---
 **Use at you own risk broken shells and editors
-  or even terminal are not my problem but pls do tell**
+  or even terminals are not my problem but pls do tell**
 _I will try and help in best way i can_
