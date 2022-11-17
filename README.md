@@ -4,7 +4,7 @@ This repo contains all the dotfiles for the apps im using
 ---
 ### Install
 ---
-```fish
+```zsh
 git clone https://github.com/lnoxsian/DOT-FILES
 ```
 ---
